@@ -230,3 +230,5 @@ Welcome to FoodTopia, a culinary adventure for food enthusiasts! FoodTopia, insp
     - Repository for managing Restaurants.
     - Offers a method to find a Restaurant by its associated Restaurant Admin.
 
+## Database Sceha
+**Here I have used MySQL database **
