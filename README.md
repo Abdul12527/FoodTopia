@@ -185,3 +185,48 @@ Welcome to FoodTopia, a culinary adventure for food enthusiasts! FoodTopia, insp
 - Retrieves a list of all restaurants.
 - Allows for finding a restaurant by ID, deleting restaurants, and finding a restaurant by associated Restaurant Admin.
 
+## Repositories
+ **IAppAdminAuthTokenRepo**
+   - Repository for managing authentication tokens for App Admins.
+   - Provides methods to find tokens by their values.
+
+ **IAppAdminRepo**
+   - Repository for managing App Admins.
+   - Provides methods to find App Admins by email.
+
+ **ICustomerAddressRepo**
+   - Repository for managing Customer addresses.
+   - Offers methods to retrieve all addresses for a Customer, find a primary address, and filter addresses by deleted status.
+
+ **ICustomerAuthTokenRepo**
+   - Repository for managing authentication tokens for Customers.
+   - Provides methods to find tokens by their values and by associated Customers.
+
+ **ICustomerRepo**
+   - Repository for managing Customers.
+   - Provides methods to find Customers by email.
+
+ **IFoodItemRepo**
+   - Repository for managing Food Items.
+   - Allows fetching Food Items associated with a specific Restaurant.
+
+ **IOrderRepo**
+   - Repository for managing customer orders.
+   - Provides methods to find orders associated with a Customer, Restaurant Admin, and filter orders by status.
+
+ **IRestaurantAddressRepo**
+   - Repository for managing Restaurant addresses.
+   - Offers methods to retrieve addresses for a Restaurant Admin and filter by deleted status.
+
+ **IRestaurantAdminAuthTokenRepo**
+   - Repository for managing authentication tokens for Restaurant Admins.
+   - Provides methods to find tokens by their values.
+
+ **IRestaurantAdminRepo**
+    - Repository for managing Restaurant Admins.
+    - Provides methods to find Restaurant Admins by email.
+
+ **IRestaurantRepo**
+    - Repository for managing Restaurants.
+    - Offers a method to find a Restaurant by its associated Restaurant Admin.
+
