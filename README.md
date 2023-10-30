@@ -107,3 +107,81 @@ Welcome to FoodTopia, a culinary adventure for food enthusiasts! FoodTopia, insp
   - Get a restaurant by ID.
 - **DELETE /restaurant/{authTokenValue}/{restaurantId}**
   - Delete a restaurant (for restaurant admin).
+    
+## Services
+### AppAdminAuthTokenServices
+
+- Generates authentication tokens for App Admins.
+- Provides the ability to find an App Admin by token value.
+- Allows for the deletion of authentication tokens.
+
+### AppAdminServices
+
+- Manages App Admins and their authentication.
+- Enables the addition of a new App Admin.
+- Supports logging in and out of App Admin accounts.
+- Provides methods for getting App Admin details, all customers, and all restaurant admins associated with an App Admin.
+
+### CustomerAddressServices
+
+- Handles customer addresses and their operations.
+- Allows adding customer addresses for authenticated customers.
+- Supports retrieving all addresses for a customer.
+- Provides the ability to get a specific customer address by ID.
+- Enables updating, making addresses primary, and deleting customer addresses.
+
+### CustomerAuthTokenServices
+
+- Manages authentication tokens for Customers.
+- Generates new tokens for Customers.
+- Provides methods for finding a token by value, deleting a token, and finding a token by the associated Customer.
+
+### CustomerServices
+
+- Manages Customer accounts and authentication.
+- Supports adding new Customers.
+- Provides login and logout functionality for Customers.
+- Allows fetching Customer details based on authentication tokens.
+
+### FoodItemServices
+
+- Manages food items for restaurants.
+- Supports adding new food items.
+- Retrieves a list of all food items.
+- Allows for finding a food item by ID, getting food items by restaurant, updating, and deleting food items.
+
+### OrderServices
+
+- Handles customer orders and order-related operations.
+- Supports placing new orders.
+- Enables updating order status for both customers and restaurant admins.
+- Provides methods for getting customer orders, customer order details, and all orders for restaurant admins.
+
+### RestaurantAddressServices
+
+- Manages restaurant addresses and their operations.
+- Allows adding restaurant addresses for authenticated restaurant admins.
+- Supports retrieving all addresses for a restaurant admin.
+- Provides the ability to get a specific restaurant address by ID.
+- Enables updating and deleting restaurant addresses.
+
+### RestaurantAdminAuthTokenServices
+
+- Generates authentication tokens for Restaurant Admins.
+- Provides the ability to find a Restaurant Admin by token value.
+- Allows for the deletion of authentication tokens.
+
+### RestaurantAdminServices
+
+- Manages Restaurant Admin accounts and their authentication.
+- Supports adding new Restaurant Admins.
+- Provides login and logout functionality for Restaurant Admins.
+- Allows fetching Restaurant Admin details based on authentication tokens.
+
+### RestaurantServices
+
+- Manages restaurant-related operations.
+- Supports adding new restaurants.
+- Retrieves a list of all restaurants.
+- Allows for finding a restaurant by ID, deleting restaurants, and finding a restaurant by associated Restaurant Admin.
+
