@@ -27,6 +27,7 @@ public class RestaurantAddressServices {
     public List<RestaurantAddress> getAllAddressForRestaurantAdmin(String authTokenValue, String email) {
         RestaurantAdminAuthToken restaurantAdminAuthToken= restaurantAdminAuthTokenServices.findByValue(authTokenValue);
         if(restaurantAdminAuthToken==null||!restaurantAdminAuthToken.getRestaurantAdmin().getEmail().equals(email))return null;
+        System.out.println("------------------"+restaurantAddressRepo.findAllByRestaurantAdminAndDeleted(restaurantAdminAuthToken.getRestaurantAdmin(),false));
         return restaurantAddressRepo.findAllByRestaurantAdminAndDeleted(restaurantAdminAuthToken.getRestaurantAdmin(),false);
     }
 

@@ -232,3 +232,4 @@ Welcome to FoodTopia, a culinary adventure for food enthusiasts! FoodTopia, insp
 
 ## Database Sceha
 **Here I have used MySQL database **
+![My Image](foodTopia.png)
